@@ -1,0 +1,49 @@
+package TPO_UKS_2_heart;
+
+	parameter ONE_TACT = 1'b1;
+	
+	parameter NORM_CLK_50 	= 50;
+	parameter ONE_CNT_OPER	= 500_000;
+	
+	parameter MSB_TIMER		= 31;
+	parameter LSB_TIMER		= 0;
+	
+	parameter MSB_LED		= 4;
+	parameter LSB_LED		= 0;
+	
+	parameter PARAM_ONE		= 1;
+	
+	parameter MSB_ADDR		= 7;
+	parameter LSB_ADDR		= 0;
+	
+	parameter MSB_DATA		= 15;
+	parameter LSB_DATA		= 0;
+	
+	parameter MSK_CHANNEL 	= 15;
+
+	typedef enum logic [MSK_CHANNEL: 0] {
+		NUMBER_OF_POINT_0	= WIDTH_PAR_CHANNEL'(0),
+		NUMBER_OF_POINT_1	= WIDTH_PAR_CHANNEL'(1),
+		NUMBER_OF_POINT_2	= WIDTH_PAR_CHANNEL'(2),
+		NUMBER_OF_POINT_3	= WIDTH_PAR_CHANNEL'(3),
+		NUMBER_OF_POINT_4	= WIDTH_PAR_CHANNEL'(4),
+		NUMBER_OF_POINT_5	= WIDTH_PAR_CHANNEL'(5),
+		NUMBER_OF_POINT_6	= WIDTH_PAR_CHANNEL'(6),
+		NUMBER_OF_POINT_7	= WIDTH_PAR_CHANNEL'(7),
+		NUMBER_OF_POINT_8	= WIDTH_PAR_CHANNEL'(8),
+		NUMBER_OF_POINT_9	= WIDTH_PAR_CHANNEL'(9),
+		NUMBER_OF_POINT_10	= WIDTH_PAR_CHANNEL'(10),
+		NUMBER_OF_POINT_11	= WIDTH_PAR_CHANNEL'(11),
+		NUMBER_OF_POINT_12	= WIDTH_PAR_CHANNEL'(12),
+		NUMBER_OF_POINT_13	= WIDTH_PAR_CHANNEL'(13),
+		NUMBER_OF_POINT_14	= WIDTH_PAR_CHANNEL'(14),
+		NUMBER_OF_POINT_15	= WIDTH_PAR_CHANNEL'(15)	
+	
+	} Number_of_point_channel;
+
+	parameter WIDTH_PAR_CHANNEL = MSB_DATA + 1;
+
+
+
+
+endpackage: TPO_UKS_2_heart
